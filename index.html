@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de actividades</title>
+</head>
+<body> 
+
+<header>
+    <h1>Panel de actividades</h1>
+        <nav>
+        <a href="#tareas">Tareas</a>
+        <a href="#nuevas">Nuevas Tareas</a>
+    </nav>
+</header>
+
+<main>
+ <section>
+    <h2>Tareas de hoy</h2>
+    <p>Estas son las tareas pendientes.</p>
+    <ul>
+        <li>Comprar cafe <span class="badge-prioridad">Alta</span>
+        </li>
+        <li>Preparar el informe <span class="badge-prioridad">Media</span>
+        </li>
+    </ul>
+
+    <section>
+        <h2>Nueva Tarea</h2>
+        <form action="">
+            <label for="titulo">Titulo de la tarea</label>
+            <input type="text" id="titulo" required maxlength="80">
+        </form>
+        <br>
+        <label for="descripcion">Descripción</label>
+        <br>
+        <textarea id="descripcion" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+        <label for="prioridad">Prioridad</label>
+        <select id="Prioridad">
+            <option value="Baja">Baja</option>
+            <option value="Media">Media</option>
+            <option value="Alta">Alta</option>
+        </select>
+     </section>
+     <br>
+     <button>Crear Tarea</button>
+ </section>
+</main>
+<footer>
+        <p>Panel de actividades, hecho con HTML</p>
+</footer>
+</body>
+</html>
